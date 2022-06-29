@@ -1,0 +1,28 @@
+
+*{
+    font-family: sans-serif;
+}
+
+#id{
+    text-align: center;
+    margin: 50px;
+}
+
+#id h1 span {
+    color: red;
+}
+
+#id button {
+    color: rgb(228, 229, 231);
+    padding: 11px 10px;
+    background-color: rgb(88, 116, 252);
+    border: none;
+    border-radius: 5px;
+}
+
+#id button:hover {
+    background-color: rgb(6, 7, 12);
+    color: white;
+    transition: 1s;
+    cursor: pointer;
+}

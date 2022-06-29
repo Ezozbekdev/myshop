@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Your Shop</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+    <header>
+        <nav id='navbar'>
+            <div class="main">
+                <div class="logo">
+                    <h1><a href="{% url 'main' %}">My Shop</a></h1>
+                </div>
+                <ul>
+                    <li><a href="{% url 'main' %}">Home</a></li>
+                    <li class="this"><a href="{% url 'list' %}">My Shop</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>   
+    <nav id="navmain">
+        <div id="tash">
+            <form method="post">
+                {% csrf_token %}
+                <h1>Register:</h1>
+                <hr>
+                <div class="input-group flex-nowrap" id="input-group-id">
+                    <input type="text" class="form-control" name="username" placeholder="Username" aria-label="username" aria-describedby="addon-wrapping">
+                </div>
+                <div class="input-group flex-nowrap" id="input-group-id">
+                    <input type="text" class="form-control" name="email" placeholder="email" aria-label="email" aria-describedby="addon-wrapping">
+                </div>
+                <div class="input-group flex-nowrap" id="input-group-id">
+                    <input type="password" class="form-control" name="password1" placeholder="Password" aria-label="password1" aria-describedby="addon-wrapping">
+                </div>
+                <div class="input-group flex-nowrap" id="input-group-id">
+                    <input type="password" class="form-control" name="password2" placeholder="Confirm Password" aria-label="password2" aria-describedby="addon-wrapping">
+                </div>
+                <div id="ds-ds-ds">
+                    <button type="submit" value="Register" class="btn btn-primary" id="button-login">Login</button>
+                </div>
+            </form>
+            <br>
+            <div id="not">
+                <p>You have account ? <a href="{% url 'login' %}">Login</a></p>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>

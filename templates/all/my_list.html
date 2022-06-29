@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shop</title>
+    <link rel="stylesheet" href="{% static 'css/myl.css' %}">
+
+</head>
+<body>
+    <header>
+        <nav id='navbar'>
+            <div class="main">
+                <div class="logo">
+                    <h1><a href="{% url 'main' %}">My Shop</a></h1>
+                </div>
+                <ul>
+                    <li><a href="{% url 'main' %}">Home</a></li>
+                    <li class="this"><a href="{% url 'list' %}">My Shop</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>     
+    <nav id="box-1-id">
+        <div class="onset">
+            {% if request.user.is_authenticated %}
+                <h1>{{ request.user }} this your product lists</h1>
+                <br>
+                <a href="{% url 'logout' %}" style="color: #333;">Log out</a>
+                <br>
+            {% else %}
+                <a href="{% url 'login' %}">Login</a>
+            {% endif %}
+        </div>
+        <div class="class-box-1">
+            <a href="{% url 'product_create' %}" class="ww" role="button" aria-pressed="true">Create</a>
+            <a href="{% url 'list' %}" class="ww" role="button" aria-pressed="true">My List</a>
+
+        </div>
+    </nav>
+    <nav id="box-2">
+        <div class="box-2-d">
+            <div class="search">
+                <form method="GET">
+                    <input type="text" name="search" placeholder="Search Product ..." value="{{search_p}}">
+                    <input type="submit" value="Search">
+                </form>
+                
+            </div>
+            <hr>
+            {% if list %}
+                {% for foo in list %}
+                    <div class="list">
+                        <h4><h1>Product: {{ foo.product }} by {{ foo.brand }} | {{ foo.section }} |<span class="start"> Started data </span> <em>{{ foo.start_data }}</em> | <span class="finish">Finish data</span>
+                            <em>{{ foo.finish_data }} |</em> <a href="{% url 'Delete' foo.id %}" id="delete">Delete</a></h1></h4>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <h1 style="text-align: center; margin: 20px">You have not product list <em><a href="{% url 'product_create' %}" style="color: blue;">create</a></em></h1>
+            {% endif %}
+        </div>
+    </nav>
+</body>
+</html>

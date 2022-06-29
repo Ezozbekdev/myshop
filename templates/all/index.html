@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shop</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <nav id='navbar'>
+            <div class="main">
+                <div class="logo">
+                    <h1><a href="{% url 'main' %}">My Shop</a></h1>
+                </div>
+                <ul>
+                    <li class="this"><a href="{% url 'main' %}">Home</a></li>
+                    <li><a href="{% url 'list' %}">My Shop</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>   
+    <nav id="case">
+        <div class="case-text">
+            <h1><span>This your shoping systems</span></h1>
+            <p>This is a system that responds to the quality of your grocery store product</p>
+            <a href="{% url 'list' %}">My account</a>
+        </div>
+    </nav>
+    <div class="copy">
+        <p>&copy; This page creator <span><a href="https://www.instagram.com/ezozbekdev/" style="color: blue;">Ezozbek</a></span></p>
+    </div>
+</body>
+</html>

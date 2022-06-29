@@ -1,0 +1,134 @@
+/* this shop css file  */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nuosu+SIL&family=Poppins:ital,wght@1,200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a {
+    color: rgb(219, 216, 213);
+    text-decoration: none;
+}
+
+#navbar {
+    background-color: #333;
+    color: rgb(207, 200, 194);
+    overflow: auto;
+}
+
+#navbar h1 {
+    float: left;
+    padding-top: 20px;
+}
+
+#navbar ul {
+    float: right;
+    list-style: none;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: inline-block;
+    padding: 25px;
+}
+
+#navbar ul li a:hover,
+#navbar ul li.this {
+    background-color: rgba(151, 144, 151, 0.555);
+    color: #333;
+}
+
+.main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#box-1-id .onset {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+#box-1-id .class-box-1{
+    text-align: center;
+}
+
+#box-1-id .class-box-1 .ww {
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+#box-1-id .class-box-1 .ww {
+    background-color: rgb(88, 116, 252);
+    width: 5px;
+    height: 5px;
+    color: aliceblue;
+}
+
+#box-1-id .class-box-1 .ww:hover {
+    background-color: rgb(75, 105, 250);
+}
+
+.list {
+    margin: 25px;
+    text-align: center;
+}
+
+
+#box-2 .box-2-d .list .start {
+    color: green;
+}
+
+#box-2 .box-2-d .list .finish {
+    color: red;
+}
+
+#delete {
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#delete {
+    color: aliceblue;
+    width: 60px;
+    height: 25px;
+    background-color: rgb(204, 35, 6);
+
+}
+
+#delete:hover {
+    background-color: rgb(201, 7, 0);
+}
+
+#box-2 .box-2-d .search {
+    text-align: center;
+    margin: 25px;
+}
+
+.search input{
+    height: 35px;
+    width: 250px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.search button {
+    height: 38px;
+    width: 70px;
+    border: none;
+    background-color: rgb(88, 116, 252);
+    border-radius: 5px;
+    color: aliceblue;
+    font-family: sans-serif;
+}
+
+.search button:hover {
+    background-color: rgb(75, 105, 250);
+    font-family: sans-serif;
+}

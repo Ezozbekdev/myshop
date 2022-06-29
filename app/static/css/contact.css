@@ -1,0 +1,53 @@
+/* this main css file  */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a {
+    color: rgb(219, 216, 213);
+    text-decoration: none;
+}
+
+#navbar {
+    background-color: #333;
+    color: rgb(207, 200, 194);
+    overflow: auto;
+}
+
+#navbar h1 {
+    float: left;
+    padding-top: 20px;
+}
+
+#navbar ul {
+    float: right;
+    list-style: none;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: inline-block;
+    padding: 25px;
+}
+
+#navbar ul li a:hover,
+#navbar ul li.this {
+    background-color: rgba(151, 144, 151, 0.555);
+    color: #333;
+}
+
+.main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#contacts {
+    padding: 10px;
+    text-align: center;
+}

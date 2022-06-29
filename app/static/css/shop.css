@@ -1,0 +1,123 @@
+/* this shop css file  */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nuosu+SIL&family=Poppins:ital,wght@1,200&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a {
+    color: rgb(219, 216, 213);
+    text-decoration: none;
+}
+
+#navbar {
+    background-color: #333;
+    color: rgb(207, 200, 194);
+    overflow: auto;
+}
+
+#navbar h1 {
+    float: left;
+    padding-top: 20px;
+}
+
+#navbar ul {
+    float: right;
+    list-style: none;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: inline-block;
+    padding: 25px;
+}
+
+#navbar ul li a:hover,
+#navbar ul li.this {
+    background-color: rgba(151, 144, 151, 0.555);
+    color: #333;
+}
+
+.main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+#box-1-id .onset {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+#box-1-id .class-box-1{
+    text-align: center;
+}
+
+#box-1-id .class-box-1 .ww {
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+#box-1-id .class-box-1 .ww {
+    background-color: rgb(88, 116, 252);
+    width: 5px;
+    height: 5px;
+    color: aliceblue;
+}
+
+#box-1-id .class-box-1 .ww:hover {
+    background-color: rgb(75, 105, 250);
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+    transform: translateY(0rem);
+}
+
+.fr {
+    margin: 20px;
+    text-align: center;
+}
+
+input {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+      margin: 0 auto;
+    padding: 1.5rem 2rem;
+    border-radius: 0.2rem;
+    background-color: rgba(12, 12, 15, 0.034);
+    border: none;
+    display: block;
+    border-bottom: 0.3rem solid 
+transparent;
+    transition: all 0.3s;
+}
+
+
+#buttons {
+    margin: 15px;
+    width: 250px;
+    height: 35px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(88, 116, 252);
+    color: aliceblue;
+}
+
+#buttons:hover {
+    background-color: rgb(156, 204, 247);
+    color: #333;
+    cursor: pointer;
+    transition: all 2s;
+}

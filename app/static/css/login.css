@@ -1,0 +1,50 @@
+/* This login page css file */
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: sans-serif;
+}
+
+a {
+    color: rgb(219, 216, 213);
+    text-decoration: none;
+}
+
+
+#navmain #tash {
+    width: 250px;
+}
+
+#navmain #tash {
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 120px;
+}
+
+#navmain #tash h1 {
+    font-family: sans-serif;
+}
+
+
+#navmain #tash #input-group-id {
+    padding-top: 5px;
+}
+
+#navmain #tash #input-group-id {
+    padding-bottom: 5px;
+}
+
+#navmain #tash #button-login {
+    width: 140px;
+}
+
+#navmain #tash #ds-ds-ds {
+    text-align: center;
+}
+
+
+#navmain #tash #not a{
+    color: blue;
+}

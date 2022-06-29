@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shop</title>
+    <link rel="stylesheet" href="{% static 'css/shop.css' %}">
+</head>
+<body>
+    <header>
+        <nav id='navbar'>
+            <div class="main">
+                <div class="logo">
+                    <h1><a href="{% url 'main' %}">My Shop</a></h1>
+                </div>
+                <ul>
+                    <li><a href="{% url 'main' %}">Home</a></li>
+                    <li class="this"><a href="{% url 'list' %}">My Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>     
+    <nav id="box-1-id">
+        <div class="onset">
+            <h1>Create Product</h1>
+        </div>
+        <div class="class-box-1">
+            <a href="{% url 'product_create' %}" class="ww" role="button" aria-pressed="true">Create</a>
+            <a href="{% url 'list' %}" class="ww" role="button" aria-pressed="true">My List</a>
+        </div>
+    </nav>
+    <nav id="box-2">
+        <body id="bodys">
+                <form method="POST" action="">
+                    <div class="fr">
+                        {% csrf_token %}
+                        <div class="form__group field">
+                            <input type="input" class="form__field" placeholder="Enter product name" name="product" required />
+                        </div>
+                        <br>
+                        <div class="form__group field">
+                            <input type="input" class="form__field" placeholder="Enter brand name(optional)" name="brand" required />
+                        </div>
+                        <br>
+                        <div class="form__group field">
+                            <input type="input" class="form__field" placeholder="section" name="section" required />
+                        </div>
+                        <br>
+                        <div class="form__group field">
+                            <input type="input" class="form__field" placeholder="Enter start data" name="start_data" required />
+                        </div>
+                        <br>
+                        <div class="form__group field">
+                            <input type="input" class="form__field" placeholder="Enter finish data" name="finish_data" required />
+                        </div>
+                        <button id='buttons' type="submit"><h3>Save</h3></button>
+                    </div>
+                </form>
+        </body>
+    </nav>
+</body>
+</html>

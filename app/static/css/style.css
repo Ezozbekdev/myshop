@@ -1,0 +1,112 @@
+/* this main css file  */
+{% load static %}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+a {
+    color: rgb(219, 216, 213);
+    text-decoration: none;
+}
+
+#navbar {
+    background-color: #333;
+    color: rgb(207, 200, 194);
+    overflow: auto;
+}
+
+#navbar h1 {
+    float: left;
+    padding-top: 20px;
+}
+
+#navbar ul {
+    float: right;
+    list-style: none;
+}
+
+#navbar ul li {
+    float: left;
+}
+
+#navbar ul li a {
+    display: inline-block;
+    padding: 25px;
+}
+
+#navbar ul li a:hover,
+#navbar ul li.this {
+    background-color: rgba(151, 144, 151, 0.555);
+    color: #333;
+}
+
+.main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+#case .case-text{
+    background-color: rgb(156, 153, 143);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+}
+
+#case .case-text{
+    text-align: center;
+    color: aliceblue;
+    padding: 20px;
+    padding-top: 170px;
+}
+
+#case .case-text span{
+    color: rgb(
+        219, 199, 116
+        )
+}
+
+#case .case-text h1 {
+    font-size: 60px;
+    color: #333;
+}
+
+#case .case-text p {
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: rgb(
+        250, 248, 242
+        );
+}
+
+
+#case .case-text a {
+    color: #000;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+#case .case-text a:hover{
+    color: aliceblue;
+    background-color: #000;
+    border-radius: 20px;
+}
+
+.copy {
+    background-color: #000;
+    padding: 20px;
+    color: aliceblue;
+}
+
+.copy p{
+    text-align: center;
+    padding: 10px;
+}
+
+.copy p span {
+    color: rgb(145, 145, 196);
+}
